@@ -5,8 +5,9 @@
 }
 
 :root {
-    --large-width: 1100px;
-    --medium-width: 800px;
+    --large-width: 1200px;
+    --medium-width: 1000px;
+    --padding-plan: 1.5rem;
     --neon-blue: #0061FFff;
     --columbia-blue: #B4D0E7ff;
     --silver: #A4A4A4ff;
@@ -106,7 +107,7 @@ nav ul li a {
 h1 {
     font-size: 4.5rem;
     font-weight: 900;
-    margin-bottom: 3rem;
+    margin-bottom: 3.3rem;
 }
 
 .jumbo_container {
@@ -121,13 +122,13 @@ h1 {
 }
 
 .jumbo_text p {
-    margin-bottom: 1.7em;
+    margin-bottom: 2.5rem;
 }
 
 .free_trial {
     width: max-content;
     padding: 0.8em;
-    margin-bottom: 1.7em;
+    margin-bottom: 2.5rem;
     background-color: var(--neon-blue);
 }
 
@@ -136,7 +137,7 @@ h1 {
 }
 
 .cancel_everytime {
-    margin-bottom: 3.2em;
+    margin-bottom: 4rem;
 }
 
 .cancel_everytime a {
@@ -144,7 +145,7 @@ h1 {
 }
 
 .down_arrow {
-    font-size: 2.8em;
+    font-size: 2.5em;
 }
 
 .down_arrow a {
@@ -155,5 +156,136 @@ h1 {
     display: block;
     width: 100%;
     flex: 1 0 70%;
-    margin-bottom: -4em;
+    margin-bottom: -4.5em;
+}
+
+
+
+
+
+main {
+    margin-top: 9rem;
+}
+
+.plans {
+    max-width: var(--medium-width);
+    margin-inline: auto;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.intro {
+    flex: 0 0 100%;
+    margin-bottom: 1rem;
+}
+
+.plans h2 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin-bottom: 3.5rem;
+}
+
+.choice {
+    font-weight: 300;
+    display: inline-block;
+}
+
+.choice.one {
+    margin-right: 1.5rem;
+}
+
+.plan {
+    flex: 0 0 calc((100% - 4rem) / 3);
+    border: 1px solid lightgray;
+}
+
+/* .plan.big {
+    flex: 0 0 34%;
+} */
+
+.plan_user {
+    font-weight: 300;
+    text-align: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 2rem;
+}
+
+.plan h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.plan_info, .plan_pros {
+    padding-inline: var(--padding-plan);
+}
+
+.plan_info .price {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.per_time {
+    font-weight: 300;
+    margin-bottom: 3rem;
+}
+
+.plan_info ul {
+    font-weight: 300;
+    margin-bottom: 3rem;
+}
+
+.fa-ul {
+    margin: 1.5rem;
+}
+
+.plan_info ul li {
+    margin-bottom: 1rem;
+}
+
+.month_free {
+    margin-bottom: 2rem;
+    background-color: var(--neon-blue);
+}
+
+.month_free a {
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.plan_info .else {
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.plan_info .else a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.plan_info::after {
+    content: "______";
+    color: lightgray;
+}
+
+.plan_pros {
+    margin-top: 3rem;
+}
+
+.plan_pros h4 {
+    margin-bottom: 2rem;
+}
+
+.plan_pros ul li {
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.plan_pros ul li i {
+    color: var(--neon-blue);
 }
