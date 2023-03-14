@@ -7,17 +7,17 @@
 :root {
     --large-width: 1200px;
     --medium-width: 1000px;
-    --padding-plan: 1.5rem;
-    --neon-blue: #0061FFff;
-    --columbia-blue: #B4D0E7ff;
-    --silver: #A4A4A4ff;
+    --neon-blue: #0061FF;
+    --neon-blue-hover: #3680F7;
+    --columbia-blue: #B4D0E7;
+    --silver: #A4A4A4;
 }
 
 body {
     font-family: sans-serif;
 }
 
-.botton_bg {
+.btn_bg {
     background-color: var(--neon-blue);
 }
 
@@ -33,7 +33,7 @@ a {
     text-decoration: none;
 }
 
-
+/* header navbar */
 
 header {
     background-color: var(--columbia-blue);
@@ -41,7 +41,8 @@ header {
 }
 
 nav {
-    height: 3.8rem;
+    height: 80px;
+    padding-inline: 1rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -53,29 +54,24 @@ nav {
 }
 
 .logo {
-    margin-left: 1rem;
-}
-
-.logo img {
-    display: block;
-    height: 100%;
-    padding: 1.2rem 0rem;
+    display: flex;
+    align-items: center;
+    margin-inline-end: 1rem;
 }
 
 .navbar {
-    height: 100%;
     flex: 1 0 0;
     display: flex;
     gap: 2rem;
     white-space: nowrap;
 }
 
-.navbar.right {
-    justify-content: flex-end;
+.navbar .spaced {
+    flex: 1 0 0;
 }
 
-.navbar li {
-    height: 100%;
+.navbar .spaced a {
+    width: max-content;
 }
 
 .navbar li a {
@@ -86,15 +82,14 @@ nav {
 }
 
 .navbar li a:hover {
-    border-bottom: 2px solid var(--silver);
+    border-bottom: 1px solid black;
 }
 
-.login {
-    padding: 1rem 0;
-    margin-right: 1rem;
+.start_btn {
+    padding: 1.4rem 0;
 }
 
-.login a {
+.start_btn a {
     height: 100%;
     padding: 0 1rem;
     display: flex;
@@ -103,98 +98,99 @@ nav {
     background-color: var(--neon-blue);
 }
 
-.login a:hover {
+.start_btn a:hover {
     border: none;
+    background-color: var(--neon-blue-hover);
 }
 
-
-
+/* header jumbo */
 
 .jumbo_section {
     max-width: var(--large-width);
     margin: auto;
-    padding-top: 8.8rem
+    padding-top: 180px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 h1 {
-    font-size: 4.5rem;
+    flex: 0 0 100%;
+    font-size: 5rem;
     font-weight: 900;
-    margin-bottom: 3.3rem;
-}
-
-.jumbo_container {
-    display: flex;
-    position: relative;
+    margin-bottom: 70px;
 }
 
 .jumbo_text {
+    flex: 0 0 30%;
     font-size: 16px;
     font-weight: 300;
-    flex: 0 0 30%;
 }
 
 .jumbo_text p {
-    margin-bottom: 2.5rem;
+    margin-bottom: 30px;
 }
 
-.free_trial {
+.jumbo_text .free_trial_btn {
     width: max-content;
-    margin-bottom: 2.5rem;
+    margin-bottom: 30px;
 }
 
-.free_trial a {
+.jumbo_text .free_trial_btn a {
     display: block;
     height: 100%;
     padding: 0.8em;
     color: white;
 }
 
-.cancel_everytime {
-    margin-bottom: 4rem;
+.jumbo_text .free_trial_btn:hover {
+    background-color: var(--neon-blue-hover);
 }
 
-.cancel_everytime a {
+.jumbo_text .cancel_everytime {
+    margin-bottom: 75px;
+}
+
+.jumbo_text .cancel_everytime a {
     color: black;
 }
 
-.down_arrow {
-    font-size: 2.5em;
+.jumbo_text .down_arrow {
+    font-size: 2.6em;
 }
 
-.down_arrow a {
+.jumbo_text .down_arrow a {
     color: black;
 }
 
-.jumbo_container img {
+.jumbo_section img {
+    flex: 1 0 70%;
     display: block;
     width: 100%;
-    flex: 1 0 70%;
-    margin-bottom: -4.5em;
+    margin-bottom: -75px;
 }
 
-
-
-
+/* main section plans */
 
 .plans {
     max-width: var(--medium-width);
     margin-inline: auto;
-    margin-bottom: 10rem;
-    padding-top: 4.8rem;
+    margin-bottom: 150px;
+    padding-top: 85px;
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     flex-wrap: wrap;
 }
 
 .intro {
     flex: 0 0 100%;
-    margin-bottom: 1rem;
+    /* margin-bottom: 12px; */
 }
 
 .plans h2 {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     font-weight: 900;
-    margin-bottom: 3.5rem;
+    margin-bottom: 65px;
 }
 
 .choice {
@@ -203,60 +199,58 @@ h1 {
 }
 
 .choice.one {
-    margin-right: 1.5rem;
+    margin-inline-end: 40px;
 }
 
 .plan {
-    flex: 0 0 calc((100% - 4rem) / 3);
+    flex: 0 0 calc((100% - 6rem) / 3);
     border: 1px solid lightgray;
 }
 
 .plan_user {
     font-weight: 300;
     text-align: center;
-    padding: 0.8rem 0;
+    padding: 11px 0;
     border-bottom: 1px solid lightgray;
-    margin-bottom: 2rem;
+    margin-bottom: 38px;
 }
 
 .plan_info h3 {
     font-size: 1.4rem;
     font-weight: 600;
-    margin-bottom: 1.5rem;
+    margin-bottom: 25px;
 }
 
 .plan_info, .plan_pros {
-    padding-inline: var(--padding-plan);
+    padding-inline: 25px;
 }
 
 .plan_info .price {
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 15px;
 }
 
 .per_time {
     font-weight: 300;
-    margin-bottom: 3rem;
-}
-
-.plan_info ul {
-    font-weight: 300;
-    margin-bottom: 3rem;
+    margin-bottom: 55px;
 }
 
 .fa-ul {
-    margin: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 50px;
+    margin-inline-start: 25px;
 }
 
 .plan_info ul li {
-    margin-bottom: 1rem;
+    display: block;
+    margin-bottom: 24px;
 }
 
-.month_free {
-    margin-bottom: 2rem;
+.free_try_btn {
+    margin-bottom: 35px;
 }
 
-.month_free a {
+.free_try_btn a {
     padding: 0.8rem;
     display: flex;
     justify-content: center;
@@ -264,9 +258,13 @@ h1 {
     color: white;
 }
 
+.free_try_btn:hover {
+    background-color: var(--neon-blue-hover);
+}
+
 .plan_info .else {
     font-weight: 300;
-    margin-bottom: 2rem;
+    margin-bottom: 38px;
 }
 
 .plan_info .else a {
@@ -280,16 +278,16 @@ h1 {
 }
 
 .plan_pros {
-    margin: 3rem 0;
+    margin: 50px 0;
 }
 
 .plan_pros h4 {
-    margin-bottom: 2rem;
+    margin-bottom: 30px;
 }
 
 .plan_pros ul li {
     font-weight: 300;
-    margin-bottom: 1.5rem;
+    margin-bottom: 22px;
 }
 
 .plan_pros ul li i {
@@ -315,63 +313,68 @@ h1 {
     font-weight: 600;
 }
 
-.team_plan_info div {
+.team_plan_info .contact_btn{
     flex: 0 0 max-content;
+    padding: 0.8rem;
 }
 
-.team_plan_info div a {
-    font-weight: 400;
+.team_plan_info .contact_btn a {
     padding: 0.8rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: white;
+}
+
+.team_plan_info .contact_btn:hover{
+    background-color: var(--neon-blue-hover);
 }
 
 .team_plan_info .contact_text {
     flex: 0 0 100%;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 18px;
 }
 
 .team_plan_info p {
     flex: 0 0 66%;
     font-weight: 300;
-    margin-bottom: 2rem;
+    margin-bottom: 25px;
 }
 
-
+/* main section partner */
 
 .partner {
     max-width: var(--medium-width);
     margin-inline: auto;
-    margin-bottom: 10rem;
+    margin-bottom: 160px;
     display: flex;
-    gap: 4rem;
+    gap: 50px;
 }
 
 .partner img {
-    flex: 0 0 calc(100% - 4rem - 30%);
+    flex: 0 0 60%;
     width: 100%;
 }
 
 .partner_text {
-    flex: 1 0 0;
-    padding-top: 4rem;
+    flex: 1 0 calc(40% - 50px);
+    padding-top: 55px;
 }
 
 .partner_text h2 {
     font-size: 1.8rem;
-    margin-bottom: 2rem;
+    margin-bottom: 18px;
 }
 
 .partner_text p {
-    margin-bottom: 3rem;
+    margin-bottom: 30px;
 }
 
 .partner_btn {
     border: 1px solid black;
     width: max-content;
+}
+
+.partner_btn:hover {
+    background-color: whitesmoke;
 }
 
 .partner_btn a {
@@ -380,14 +383,14 @@ h1 {
     color: black;
 }
 
-
+/* main section features */
 
 .features {
     max-width: var(--medium-width);
     margin-inline: auto;
-    margin-bottom: 7rem;
+    margin-bottom: 150px;
     display: flex;
-    gap: 2.5rem;
+    gap: 45px;
     flex-wrap: wrap;
 }
 
@@ -395,23 +398,23 @@ h1 {
     flex: 0 0 100%;
     font-size: 2.5rem;
     font-weight: 900;
-    margin-bottom: 2rem;
+    margin-bottom: 30px;
 }
 
-.feature{
-    flex: 0 0 calc((100% - 5rem) / 3);
-    margin-bottom: 1rem;
+.feature {
+    flex: 0 0 calc((100% - 90px) / 3);
+    margin-bottom: 20px;
 }
 
 .feature img {
     width: 100%;
-    margin-bottom: 1.5rem;
+    margin-bottom: 20px;
 }
 
 .feature h3 {
-    margin-bottom: 2rem;
     font-size: 1.5rem;
     line-height: 2rem;
+    margin-bottom: 35px;
 }
 
 .feature p {
@@ -422,9 +425,9 @@ h1 {
     flex: 0 0 60%;
     font-size: 2.5rem;
     font-weight: 900;
-    line-height: 4rem;
-    margin-top: 12rem;
-    margin-bottom: 2.5rem;
+    line-height: 52px;
+    margin-top: 190px;
+    margin-bottom: 60px;
 }
 
 .features_link {
@@ -434,4 +437,10 @@ h1 {
 .features_link a {
     text-decoration: underline;
     color: blue;
+}
+
+/* main section sponsors */
+
+.sponsors {
+    display: flex;
 }
