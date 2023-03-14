@@ -505,20 +505,24 @@ h1 {
     background-color: whitesmoke;
 }
 
-.sponsor_description img {
+.sponsor_description div img {
     display: block;
     width: 50%;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
 
-.sponsor_description img::after {
-    content: "______";
+.sponsor_description div::after{
+    content: "________";
     color: var(--silver);
 }
 
-.sponsor_description p {
-    margin-bottom: 50px;
+.sponsor_description blockquote {
+    margin: 35px 0;
 }
+.sponsor_description blockquote p {
+    margin-bottom: 35px;
+}
+
 
 /* main start whit dropbox section */
 
@@ -550,7 +554,7 @@ h1 {
 
 .start_free_trial_btn a {
     display: block;
-    padding: 18px 50px;
+    padding: 18px 55px;
     color: black;
 }
 
@@ -584,3 +588,50 @@ h1 {
 }
 
 /* footer */
+
+footer {
+    padding: 100px 0 50px 0;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.footer_container {
+    max-width: var(--large-width);
+    margin-inline: auto;
+}
+
+.footer_section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px;
+}
+
+.footer_section::after {
+    content: "______________";
+}
+
+.footer_list {
+    flex: 0 0 calc((100% - 360px) / 5);
+}
+
+.footer_list li:first-child {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.footer_list li {
+    margin-bottom: 18px;
+}
+
+.footer_list li a {
+    color: whitesmoke;
+}
+
+.footer_list li a:hover {
+    text-decoration: underline;
+}
+
+.lang {
+    margin-top: 45px;
+}
