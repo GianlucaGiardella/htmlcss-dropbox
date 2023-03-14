@@ -86,12 +86,12 @@ nav {
 }
 
 .start_btn {
-    padding: 1.4rem 0;
+    padding: 20px 0;
 }
 
 .start_btn a {
     height: 100%;
-    padding: 0 1rem;
+    padding: 0 20px;
     display: flex;
     align-items: center;
     color: white;
@@ -138,7 +138,6 @@ h1 {
 
 .jumbo_text .free_trial_btn a {
     display: block;
-    height: 100%;
     padding: 0.8em;
     color: white;
 }
@@ -184,7 +183,6 @@ h1 {
 
 .intro {
     flex: 0 0 100%;
-    /* margin-bottom: 12px; */
 }
 
 .plans h2 {
@@ -313,17 +311,17 @@ h1 {
     font-weight: 600;
 }
 
-.team_plan_info .contact_btn{
+.team_plan_info .contact_btn {
     flex: 0 0 max-content;
-    padding: 0.8rem;
 }
 
 .team_plan_info .contact_btn a {
+    display: block;
     padding: 0.8rem;
     color: white;
 }
 
-.team_plan_info .contact_btn:hover{
+.team_plan_info .contact_btn:hover {
     background-color: var(--neon-blue-hover);
 }
 
@@ -442,5 +440,119 @@ h1 {
 /* main section sponsors */
 
 .sponsors {
+    max-width: 1920px;
     display: flex;
+}
+
+.sponsors_group {
+    flex: 0 0 calc(100% / 3);
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.sponsor {
+    flex: 0 0 calc(100% / 2);
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.designit {
+    border: 12px solid #D1E9CD;
+    background-color: #A2D39B;
+}
+
+.asu {
+    background-color: #61082B;
+}
+
+.wbr {
+    background-color: #D5001F;
+}
+
+.hearst_corp {
+    background-color: #B4D0E7;
+}
+
+.uof {
+    background-color: #0093CE;
+}
+
+.topps {
+    background-color: #FF1C1C;
+}
+
+.lonely_planet {
+    background-color: #0D2481;
+}
+
+.clear_channel {
+    background-color: #FFD830;
+}
+
+.sponsor img {
+    width: 60%;
+    filter: invert(99%) sepia(1%) saturate(2402%) hue-rotate(215deg) brightness(116%) contrast(100%);
+}
+
+.sponsor_description {
+    flex: 0 0 calc(100% / 3);
+    aspect-ratio: 1 / 1;
+    padding: 50px;
+    background-color: whitesmoke;
+}
+
+.sponsor_description img {
+    display: block;
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+.sponsor_description img::after {
+    content: "______";
+    color: var(--silver);
+}
+
+.sponsor_description p {
+    margin-bottom: 50px;
+}
+
+/* main start whit dropbox section */
+
+
+.start_whit_dropbox_bg {
+    padding: 130px 0;
+    background-color: #B4D0E7;
+}
+
+.start_whit_dropbox_container {
+    max-width: var(--medium-width);
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.start_whit_dropbox_container h2 {
+    flex: 0 0 50%;
+    font-size: 2.5rem;
+    color: #711C33;
+}
+
+.start_free_trial_btn {
+    flex: 0 0 max-content;
+    background-color: white;
+}
+
+.start_free_trial_btn a {
+    display: block;
+    padding: 18px 50px;
+    color: black;
+}
+
+.start_free_trial_btn:hover {
+    background-color: whitesmoke;
 }
