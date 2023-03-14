@@ -42,7 +42,6 @@ header {
 
 nav {
     height: 3.8rem;
-    padding-inline: 1rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -53,55 +52,63 @@ nav {
     background-color: white;
 }
 
-nav a {
-    height: 100%;
+.logo {
+    margin-left: 1rem;
 }
 
-nav img {
+.logo img {
     display: block;
     height: 100%;
-    padding: 1rem 0;
+    padding: 1.2rem 0rem;
 }
 
-nav ul li {
+.navbar {
     height: 100%;
-    padding-inline: 1rem;
+    flex: 1 0 0;
+    display: flex;
+    gap: 2rem;
+    white-space: nowrap;
 }
 
-nav ul li a {
-    display: block;
+.navbar.right {
+    justify-content: flex-end;
+}
+
+.navbar li {
+    height: 100%;
+}
+
+.navbar li a {
     height: 100%;
     display: flex;
     align-items: center;
     color: var(--silver);
 }
 
-.top_left_nav {
-    height: 100%;
-    flex: 1 0 0;
-    display: flex;
-    gap: 1rem;
-    white-space: nowrap;
-}
-
-.top_right_nav {
-    height: 100%;
-    flex: 1 0 0;
-    display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
-    white-space: nowrap;
+.navbar li a:hover {
+    border-bottom: 2px solid var(--silver);
 }
 
 .login {
     padding: 1rem 0;
+    margin-right: 1rem;
 }
 
 .login a {
-    padding: 0 0.5rem;
+    height: 100%;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
     color: white;
     background-color: var(--neon-blue);
 }
+
+.login a:hover {
+    border: none;
+}
+
+
+
 
 .jumbo_section {
     max-width: var(--large-width);
@@ -132,11 +139,13 @@ h1 {
 
 .free_trial {
     width: max-content;
-    padding: 0.8em;
     margin-bottom: 2.5rem;
 }
 
 .free_trial a {
+    display: block;
+    height: 100%;
+    padding: 0.8em;
     color: white;
 }
 
@@ -170,7 +179,7 @@ h1 {
 .plans {
     max-width: var(--medium-width);
     margin-inline: auto;
-    margin-bottom: 7rem;
+    margin-bottom: 10rem;
     padding-top: 4.8rem;
     display: flex;
     gap: 2rem;
@@ -183,7 +192,7 @@ h1 {
 }
 
 .plans h2 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     font-weight: 900;
     margin-bottom: 3.5rem;
 }
@@ -210,7 +219,7 @@ h1 {
     margin-bottom: 2rem;
 }
 
-.plan_user h3 {
+.plan_info h3 {
     font-size: 1.4rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
@@ -271,7 +280,7 @@ h1 {
 }
 
 .plan_pros {
-    margin-top: 3rem;
+    margin: 3rem 0;
 }
 
 .plan_pros h4 {
@@ -336,7 +345,7 @@ h1 {
 .partner {
     max-width: var(--medium-width);
     margin-inline: auto;
-    margin-bottom: 7rem;
+    margin-bottom: 10rem;
     display: flex;
     gap: 4rem;
 }
@@ -369,4 +378,60 @@ h1 {
     display: block;
     padding: 1rem;
     color: black;
+}
+
+
+
+.features {
+    max-width: var(--medium-width);
+    margin-inline: auto;
+    margin-bottom: 7rem;
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.features_first_title {
+    flex: 0 0 100%;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+
+.feature{
+    flex: 0 0 calc((100% - 5rem) / 3);
+    margin-bottom: 1rem;
+}
+
+.feature img {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.feature h3 {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.feature p {
+    font-weight: 300;
+}
+
+.features_second_title {
+    flex: 0 0 60%;
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 4rem;
+    margin-top: 12rem;
+    margin-bottom: 2.5rem;
+}
+
+.features_link {
+    flex: 0 0 60%;
+}
+
+.features_link a {
+    text-decoration: underline;
+    color: blue;
 }
