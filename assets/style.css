@@ -525,6 +525,7 @@ h1 {
 
 .start_whit_dropbox_bg {
     padding: 130px 0;
+    margin-bottom: 160px;
     background-color: #B4D0E7;
 }
 
@@ -556,3 +557,30 @@ h1 {
 .start_free_trial_btn:hover {
     background-color: whitesmoke;
 }
+
+/* main faq */
+
+.faq {
+    max-width: var(--medium-width);
+    margin-inline: auto;
+    margin-bottom: 150px;
+}
+
+.faq h2 {
+    font-size: 2.5rem;
+    padding-bottom: 65px;
+    border-bottom: 1px solid black;
+}
+
+.question {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.question i {
+    margin-inline-end: 40px;
+}
+
+/* footer */
