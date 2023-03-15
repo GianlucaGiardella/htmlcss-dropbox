@@ -41,7 +41,7 @@ header {
 }
 
 nav {
-    height: 80px;
+    height: 5rem;
     padding-inline: 1rem;
     position: fixed;
     top: 0;
@@ -87,12 +87,12 @@ nav {
 }
 
 .start_btn {
-    padding: 20px 0;
+    padding: 1.25rem 0;
 }
 
 .start_btn a {
     height: 100%;
-    padding: 0 20px;
+    padding: 0 1.25rem;
     display: flex;
     align-items: center;
     color: white;
@@ -100,7 +100,6 @@ nav {
 }
 
 .start_btn a:hover {
-    border: none;
     background-color: var(--neon-blue-hover);
 }
 
@@ -109,7 +108,7 @@ nav {
 .jumbo_section {
     max-width: var(--large-width);
     margin: auto;
-    padding-top: 180px;
+    padding-top: 11.25rem;
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -119,27 +118,26 @@ h1 {
     flex: 0 0 100%;
     font-size: 5rem;
     font-weight: 900;
-    margin-bottom: 70px;
+    margin-bottom: 4.4rem;
 }
 
 .jumbo_text {
     flex: 0 0 30%;
-    font-size: 16px;
     font-weight: 300;
 }
 
 .jumbo_text p {
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
 }
 
 .jumbo_text .free_trial_btn {
     width: max-content;
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
 }
 
 .jumbo_text .free_trial_btn a {
     display: block;
-    padding: 0.8em;
+    padding: 0.8rem;
     color: white;
 }
 
@@ -148,15 +146,19 @@ h1 {
 }
 
 .jumbo_text .cancel_everytime {
-    margin-bottom: 75px;
+    margin-bottom: 4.7rem;
 }
 
 .jumbo_text .cancel_everytime a {
     color: black;
 }
 
+.jumbo_text .cancel_everytime:hover {
+    text-decoration: underline;
+}
+
 .jumbo_text .down_arrow {
-    font-size: 2.6em;
+    font-size: 2.6rem;
 }
 
 .jumbo_text .down_arrow a {
@@ -167,7 +169,7 @@ h1 {
     flex: 1 0 70%;
     display: block;
     width: 100%;
-    margin-bottom: -75px;
+    margin-bottom: -4.7rem;
 }
 
 /* main section plans */
@@ -189,7 +191,7 @@ h1 {
 .plans h2 {
     font-size: 2.6rem;
     font-weight: 900;
-    margin-bottom: 65px;
+    margin-bottom: 4rem;
 }
 
 .choice {
@@ -198,14 +200,13 @@ h1 {
 }
 
 .choice.one {
-    margin-inline-end: 40px;
+    margin-inline-end: 2.5rem;
 }
 
 .choice.one i {
-    font-size: 16px;
     color: var(--neon-blue);
     border: 3px solid var(--neon-blue);
-    border-radius: 50px;
+    border-radius: 30px;
 }
 
 .plan {
@@ -216,7 +217,7 @@ h1 {
 .plan_user {
     font-weight: 300;
     text-align: center;
-    padding: 11px 0;
+    padding: 0.75rem 0;
     border-bottom: 1px solid lightgray;
     margin-bottom: 38px;
 }
@@ -224,31 +225,31 @@ h1 {
 .plan_info h3 {
     font-size: 1.4rem;
     font-weight: 600;
-    margin-bottom: 25px;
+    margin-bottom: 1.5rem;
 }
 
 .plan_info, .plan_pros {
-    padding-inline: 25px;
+    padding-inline: 1.5rem;
 }
 
 .plan_info .price {
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 
 .per_time {
     font-weight: 300;
-    margin-bottom: 55px;
+    margin-bottom: 3.4rem;
 }
 
 .plan_list {
-    margin-bottom: 50px;
+    margin-bottom: 3.1rem;
 }
 
 .plan_list li {
     font-weight: 300;
     display: flex;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 
 .plan_list li i {
@@ -256,7 +257,7 @@ h1 {
 }
 
 .free_try_btn {
-    margin-bottom: 35px;
+    margin-bottom: 2.1rem;
 }
 
 .free_try_btn a {
@@ -273,7 +274,7 @@ h1 {
 
 .plan_info .else {
     font-weight: 300;
-    margin-bottom: 38px;
+    margin-bottom: 2.4rem;
 }
 
 .plan_info .else a {
@@ -287,16 +288,16 @@ h1 {
 }
 
 .plan_pros {
-    margin: 50px 0;
+    margin: 3.1rem 0;
 }
 
 .plan_pros h4 {
-    margin-bottom: 30px;
+    margin-bottom: 1.8rem;
 }
 
 .plan_pros .plan_list li {
     font-weight: 300;
-    margin-bottom: 22px;
+    margin-bottom: 1.4rem;
 }
 
 .plan_pros .plan_list li i {
@@ -339,13 +340,13 @@ h1 {
 .team_plan_info .contact_text {
     flex: 0 0 100%;
     font-weight: 600;
-    margin-bottom: 18px;
+    margin-bottom: 1.1rem;
 }
 
 .team_plan_info p {
     flex: 0 0 70%;
     font-weight: 300;
-    margin-bottom: 25px;
+    margin-bottom: 1.5rem;
 }
 
 /* main section partner */
@@ -364,17 +365,17 @@ h1 {
 
 .partner_text {
     flex: 0 0 38%;
-    padding-top: 55px;
-    padding-inline: 45px;
+    padding-top: 3.4rem;
+    padding-inline: 2.8rem;
 }
 
 .partner_text h2 {
     font-size: 1.8rem;
-    margin-bottom: 18px;
+    margin-bottom: 1.1rem;
 }
 
 .partner_text p {
-    margin-bottom: 30px;
+    margin-bottom: 1.9rem;
 }
 
 .partner_btn {
@@ -397,9 +398,9 @@ h1 {
 .features {
     max-width: var(--medium-width);
     margin-inline: auto;
-    margin-bottom: 150px;
+    margin-bottom: 9.3rem;
     display: flex;
-    gap: 50px;
+    gap: 3.1rem;
     flex-wrap: wrap;
 }
 
@@ -407,23 +408,23 @@ h1 {
     flex: 0 0 100%;
     font-size: 2.5rem;
     font-weight: 900;
-    margin-bottom: 30px;
+    margin-bottom: 1.9rem;
 }
 
 .feature {
     flex: 0 0 calc((100% - 100px) / 3);
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .feature img {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .feature h3 {
     font-size: 1.5rem;
     line-height: 2rem;
-    margin-bottom: 35px;
+    margin-bottom: 2.2rem;
 }
 
 .feature p {
@@ -434,9 +435,9 @@ h1 {
     flex: 0 0 60%;
     font-size: 2.5rem;
     font-weight: 900;
-    line-height: 52px;
-    margin-top: 190px;
-    margin-bottom: 60px;
+    line-height: 3.25rem;
+    margin-top: 12rem;
+    margin-bottom: 3.75rem;
 }
 
 .features_link {
@@ -451,7 +452,7 @@ h1 {
 /* main section sponsors */
 
 .sponsors {
-    max-width: 1920px;
+    /* max-width: 1920px; */
     display: flex;
 }
 
@@ -547,27 +548,29 @@ h1 {
 .sponsor_description {
     flex: 0 0 calc(100% / 3);
     aspect-ratio: 1 / 1;
-    padding: 50px;
+    padding: 3.1rem;
     background-color: whitesmoke;
 }
 
 .sponsor_description div img {
     display: block;
     width: 50%;
-    margin-bottom: 35px;
+    margin-bottom: 2.2rem;
 }
 
 .sponsor_description div::after {
-    content: "________";
-    color: var(--silver);
+    content: " ";
+    display: block;
+    width: 20%;
+    border-bottom: 1px solid var(--silver);
 }
 
 .sponsor_description blockquote {
-    margin: 35px 0;
+    margin: 2.2rem 0;
 }
 
 .sponsor_description blockquote p {
-    margin-bottom: 35px;
+    margin-bottom: 2.2rem;
 }
 
 
@@ -575,7 +578,7 @@ h1 {
 
 
 .start_whit_dropbox_bg {
-    padding: 130px 0;
+    padding: 8.1rem 0;
     margin-bottom: 160px;
     background-color: #B4D0E7;
 }
@@ -601,7 +604,7 @@ h1 {
 
 .start_free_trial_btn a {
     display: block;
-    padding: 18px 55px;
+    padding: 1.1rem 3.4rem;
     color: black;
 }
 
@@ -614,30 +617,30 @@ h1 {
 .faq {
     max-width: var(--medium-width);
     margin-inline: auto;
-    margin-bottom: 150px;
+    margin-bottom: 9.4rem;
 }
 
 .faq h2 {
     font-size: 2.5rem;
-    padding-bottom: 65px;
+    padding-bottom: 4rem;
     border-bottom: 1px solid black;
 }
 
 .question {
-    padding: 40px 0;
+    padding: 2.5rem 0;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid black;
 }
 
 .question i {
-    margin-inline-end: 40px;
+    margin-inline-end: 2.5rem;
 }
 
 /* footer */
 
 footer {
-    padding: 100px 0 50px 0;
+    padding: 6.25rem 0 3.1rem 0;
     background-color: black;
     color: whitesmoke;
 }
@@ -650,11 +653,14 @@ footer {
 .footer_section {
     display: flex;
     flex-wrap: wrap;
-    gap: 90px;
+    gap: 5.6rem;
 }
 
 .footer_section::after {
-    content: "______________";
+    content: " ";
+    display: block;
+    width: 10%;
+    border-bottom: 1px solid whitesmoke;
 }
 
 .footer_list {
@@ -663,12 +669,12 @@ footer {
 
 .footer_list li:first-child {
     font-size: 1.3rem;
-    margin-bottom: 25px;
+    margin-bottom: 1.5rem;
     color: white;
 }
 
 .footer_list li {
-    margin-bottom: 18px;
+    margin-bottom: 1.1rem;
 }
 
 .footer_list li a {
@@ -680,5 +686,5 @@ footer {
 }
 
 .lang {
-    margin-top: 45px;
+    margin-top: 2.8rem;
 }
