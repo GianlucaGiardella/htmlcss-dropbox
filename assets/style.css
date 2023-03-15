@@ -241,15 +241,18 @@ h1 {
     margin-bottom: 55px;
 }
 
-.fa-ul {
-    font-weight: 300;
+.plan_list {
     margin-bottom: 50px;
-    margin-inline-start: 25px;
 }
 
-.plan_info ul li {
-    display: block;
+.plan_list li {
+    font-weight: 300;
+    display: flex;
     margin-bottom: 24px;
+}
+
+.plan_list li i {
+    margin-inline-end: 0.5rem;
 }
 
 .free_try_btn {
@@ -291,12 +294,12 @@ h1 {
     margin-bottom: 30px;
 }
 
-.plan_pros ul li {
+.plan_pros .plan_list li {
     font-weight: 300;
     margin-bottom: 22px;
 }
 
-.plan_pros ul li i {
+.plan_pros .plan_list li i {
     color: var(--neon-blue);
 }
 
