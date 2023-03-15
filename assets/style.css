@@ -343,7 +343,7 @@ h1 {
 }
 
 .team_plan_info p {
-    flex: 0 0 66%;
+    flex: 0 0 70%;
     font-weight: 300;
     margin-bottom: 25px;
 }
@@ -355,17 +355,17 @@ h1 {
     margin-inline: auto;
     margin-bottom: 160px;
     display: flex;
-    gap: 50px;
 }
 
 .partner img {
-    flex: 0 0 60%;
+    flex: 0 0 62%;
     width: 100%;
 }
 
 .partner_text {
-    flex: 1 0 calc(40% - 50px);
+    flex: 0 0 38%;
     padding-top: 55px;
+    padding-inline: 45px;
 }
 
 .partner_text h2 {
@@ -399,7 +399,7 @@ h1 {
     margin-inline: auto;
     margin-bottom: 150px;
     display: flex;
-    gap: 45px;
+    gap: 50px;
     flex-wrap: wrap;
 }
 
@@ -411,7 +411,7 @@ h1 {
 }
 
 .feature {
-    flex: 0 0 calc((100% - 90px) / 3);
+    flex: 0 0 calc((100% - 100px) / 3);
     margin-bottom: 20px;
 }
 
@@ -477,31 +477,66 @@ h1 {
 }
 
 .asu {
+    border: 12px solid #61082B;
     background-color: #61082B;
 }
 
+.asu:hover {
+    border: 12px solid #7b2045;
+}
+
 .wbr {
+    border: 12px solid #D5001F;
     background-color: #D5001F;
 }
 
+.wbr:hover {
+    border: 12px solid #e54a61;
+}
+
 .hearst_corp {
+    border: 12px solid #B4D0E7;
     background-color: #B4D0E7;
 }
 
+.hearst_corp:hover {
+    border: 12px solid #d2dce5;
+}
+
 .uof {
+    border: 12px solid #0093CE;
     background-color: #0093CE;
 }
 
+.uof:hover {
+    border: 12px solid #45a1c5;
+}
+
 .topps {
+    border: 12px solid #FF1C1C;
     background-color: #FF1C1C;
 }
 
+.topps:hover {
+    border: 12px solid #fd6060;
+}
+
 .lonely_planet {
+    border: 12px solid #0D2481;
     background-color: #0D2481;
 }
 
+.lonely_planet:hover {
+    border: 12px solid #415089;
+}
+
 .clear_channel {
+    border: 12px solid #FFD830;
     background-color: #FFD830;
+}
+
+.clear_channel:hover {
+    border: 12px solid #fbe689;
 }
 
 .sponsor img {
@@ -522,7 +557,7 @@ h1 {
     margin-bottom: 35px;
 }
 
-.sponsor_description div::after{
+.sponsor_description div::after {
     content: "________";
     color: var(--silver);
 }
@@ -530,6 +565,7 @@ h1 {
 .sponsor_description blockquote {
     margin: 35px 0;
 }
+
 .sponsor_description blockquote p {
     margin-bottom: 35px;
 }
