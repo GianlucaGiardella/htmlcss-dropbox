@@ -165,11 +165,14 @@ h1 {
     color: black;
 }
 
-.jumbo_section img {
+.jumbo_img {
     flex: 1 0 70%;
+    margin-bottom: -4.7rem;
+}
+
+.jumbo_img img {
     display: block;
     width: 100%;
-    margin-bottom: -4.7rem;
 }
 
 /* main section plans */
@@ -358,8 +361,12 @@ h1 {
     display: flex;
 }
 
-.partner img {
+.partner_img {
     flex: 0 0 62%;
+}
+
+.partner_img img {
+    display: block;
     width: 100%;
 }
 
@@ -573,9 +580,7 @@ h1 {
     margin-bottom: 2.2rem;
 }
 
-
 /* main start whit dropbox section */
-
 
 .start_whit_dropbox_bg {
     padding: 8.1rem 0;
